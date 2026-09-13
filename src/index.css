@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-display: 'Chakra Petch', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #090d12;
+  color: #c9d7e3;
+}
+
+.font-mono-data {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+.font-display-tactical {
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+}
+
+/* Tactical Radar Grid Background */
+.radar-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(30, 45, 61, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 45, 61, 0.4) 1px, transparent 1px);
+}
+
+.radar-sweep {
+  background: conic-gradient(from 0deg at 50% 50%, rgba(16, 185, 129, 0.15) 0deg, transparent 60deg, transparent 360deg);
+}
+
+/* Custom Tactical Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090d12;
+}
+::-webkit-scrollbar-thumb {
+  background: #1c2736;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2b3d52;
+}
+
+/* Scanline subtle CRT effect for radar header */
+.tactical-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+}
+

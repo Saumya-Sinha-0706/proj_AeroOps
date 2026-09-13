@@ -1,0 +1,6 @@
+{
+  "name": "AeroDeck — Airport Operations Control Center",
+  "description": "Mission-critical live airport operations control center featuring 2D airfield radar, real-time flight timeline tracking, drag-and-drop gate Gantt management with ICAO conflict detection, disruption simulation cascading, and vehicle dispatching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
